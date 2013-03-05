@@ -37,8 +37,8 @@ Output
     7       Field_Type           X
     8       Field_Code           XD
     10      Field_RD             0
-    11      Field_Time           0
-    12      Field_Fighter        0
+    11      Field_Time           13:22:05
+    12      Field_Field          0
                                  ######################
     Line Number (5)              ######################
     0       Packet               2
