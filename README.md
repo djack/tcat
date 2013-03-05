@@ -35,10 +35,10 @@ Output
     5       Blue                 0
     6       Field_ID             1
     7       Field_Type           X
-    8       Field_Code           XD
-    10      Field_RD             0
-    11      Field_Time           13:22:05
-    12      Field_Field          0
+    81      Field_Code           XD
+    100     Field_RD             0
+    101     Field_Time           13:22:05
+    102     Field_Field          0
                                  ######################
     Line Number (5)              ######################
     0       Packet               2
