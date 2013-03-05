@@ -1,7 +1,7 @@
 tcat
 ====
 
-Transpose delimited lines of text to nicely readable labeled and aligned rows at the CLI.
+Transpose delimited lines of text to readable, labeled, aligned rows at the CLI.
 
 usage: 
 ----
