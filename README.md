@@ -14,16 +14,16 @@ optional arguments:
 
   -h, --help            show this help message and exit
 
-  -i FILE, --infile 
+  -i, --infile FILE, 
                         the delimited file to read (default stdin)
 
-  -v, --verbose         Don't Supress empty fields
+  -v, --verbose         don't supress empty fields
 
-  -d DELIM, --delimiter 
+  -d, --delimiter DELIM, 
                         field delimiter
 
-  -n NUMLINES, --numlines 
-                        number of lines to parse
+  -n, --numlines N,
+                        parse exact N lines
 
-  -s START, --start 
+  -s, --start N,
                         skip the first N lines
