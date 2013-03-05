@@ -27,6 +27,7 @@ def main():
 
 def prep_output(infile):
 	header = infile.next()
+	header = ["%-8s" % str(header.index(i)) + i for i in header]
 	linebuffer = max([len(i) for i in header])
 	format_string = '%-' + str(linebuffer) + 's'
 	return header, format_string
@@ -38,7 +39,7 @@ def skip_lines(start, infile):
 
 def create_parser():
 	parser = argparse.ArgumentParser(description='tcat a delimited file')
-	parser.add_argument('-i', '--infile', metavar='FILE', type=file,
+	parser.add_argument('infile', metavar='FILE', type=file,
 	               		help='the delimited file to read (default stdin)', 
 	               		default=sys.stdin)
 	parser.add_argument('-v', '--verbose', action='store_true',
