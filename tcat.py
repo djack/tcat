@@ -4,8 +4,9 @@
 # 1. Transpose lines of tab delimited text (DONE)
 # 2. Space out the header and the lines nicely (DONE)
 # 3. Handle quoted tabs properly (DONE - csvwriter handles this)
-# 4. accept arbitrary delimiters
-# 5. limit output lines to -n lines
+# 4. accept arbitrary delimiters (DONE)
+# 5. limit output lines to -n lines (DONE)
+# 6. Skip the first N lines (DONE)
 
 import sys
 import csv
