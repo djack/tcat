@@ -23,8 +23,10 @@ usage:
                         
 Output
 ----      
+
+    $ tcat test_file.tsv -d "\t" -s 4 -n 3
       
-    Line Number (1)              ######################
+    Line Number (4)              ######################
     0       Packet               1
     1       Time                 2013-02-12 13:22:05
     2       Event                577
@@ -38,7 +40,7 @@ Output
     11      Field_Time           0
     12      Field_Fighter        0
                                  ######################
-    Line Number (2)              ######################
+    Line Number (5)              ######################
     0       Packet               2
     1       Time                 2013-02-12 13:22:08
     2       Event                577
@@ -46,7 +48,7 @@ Output
     4       Red                  0
     5       Blue                 0
                                  ######################
-    Line Number (3)              ######################
+    Line Number (6)              ######################
     0       Packet               3
     1       Time                 2013-02-12 13:22:11
     2       Event                577
