@@ -10,10 +10,12 @@ usage:
 
     tcat a delimited file
 
+    positional arguments:
+        FILE                   the delimited file to read (default stdin)
+
     optional arguments:
 
         -h, --help             show this help message and exit
-        -i, --infile FILE,     the delimited file to read (default stdin)
         -v, --verbose          don't supress empty fields
         -d, --delimiter DELIM, field delimiter
         -n, --numlines N,      parse exact N lines
