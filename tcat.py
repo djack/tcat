@@ -23,10 +23,10 @@ def main():
     infile = skip_lines(args.start, infile)
     line_num = args.start + 1
     for i in range(args.numlines):
-        print_line(args, infile, format_string, header)
+        print_line(args, infile, format_string, header, line_num)
         line_num += 1       
 
-def print_line(args, infile, format_string, header):
+def print_line(args, infile, format_string, header, line_num):
     line_header = "Line Number (" + str(line_num) + ")"
     print format_string % line_header,  "######################"
     conditional_print(args.verbose, infile, format_string, header)
@@ -35,7 +35,7 @@ def print_line(args, infile, format_string, header):
 
 def prep_output(infile):
     header = infile.next()
-    header = ["%-8s" % str(header.index(i)) + i for i in header]
+    header = ["%-8s" % str(header.index(i) + 1) + i for i in header]
     linebuffer = max([len(i) for i in header])
     format_string = '%-' + str(linebuffer) + 's'
     return header, format_string
